@@ -1,0 +1,68 @@
+@import 'baguetteBox';
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+// font-family: 'Roboto', sans-serif;
+
+$transition: all .2s ease-in-out;
+
+*  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.searchbar {
+    margin: 50px auto;
+    display: block;
+    width: 600px;
+    height: 60px;
+
+    &::placeholder {
+        font: 'Roboto', sans-serif 16px 500;
+        padding: 20px;
+    }
+}
+
+.gallery {
+    display: grid;
+    width: 900px;
+    margin: 0 auto;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 25px;
+
+    img {
+        transition: $transition;
+
+        &:hover {
+            border-radius: 10px;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.overlay {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.focusIMG {
+    width: 1200px;
+    margin: 0 20px;
+}
+
+.ar { 
+    width: 70px;
+    transition: $transition;
+
+
+    &:hover {
+        background-color: black;
+        border-radius: 10px;
+    }
+}
+
+
