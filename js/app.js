@@ -2,17 +2,19 @@ baguetteBox.run('.gallery');
 // const search = new Filter('search', 'data-caption'); 
 
 // JavaScript code
-function search_animal() {
-    let input = document.getElementById('searchbar').value
-    input=input.toLowerCase();
-    let x = document.getElementsByClassName('img');
-      
-    for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {  // <--- I think this is what its checking for
-            x[i].style.display="none";
-        }
-        else {
-            x[i].style.display="list-item";                 
+
+
+function search() {
+    const input = document.getElementById('searchbar').value.toLowerCase();
+    const gallery = document.querySelectorAll('.img');
+
+    for (let i = 0; i < gallery.length ; i++) {
+        const caption = gallery[i].getAttribute('data-caption');
+
+        if (caption.indexOf(input) > -1) {
+            gallery[i].style.display = '';
+        } else {
+            gallery[i].style.display = 'none';
         }
     }
 }
