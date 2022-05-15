@@ -163,10 +163,10 @@
   margin: 50px auto;
   display: block;
   width: 600px;
-  height: 60px; }
+  height: 60px;
+  text-indent: 20px; }
   .searchbar::placeholder {
-    font: 'Roboto', sans-serif 16px 500;
-    padding: 20px; }
+    font: 'Roboto', sans-serif 16px 500; }
 
 .gallery {
   display: grid;
