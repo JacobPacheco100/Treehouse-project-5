@@ -180,23 +180,4 @@
       border-radius: 10px;
       transform: scale(1.05); }
 
-.overlay {
-  height: 100vh;
-  width: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: rgba(0, 0, 0, 0.9); }
-
-.focusIMG {
-  width: 1200px;
-  margin: 0 20px; }
-
-.ar {
-  width: 70px;
-  transition: all 0.2s ease-in-out; }
-  .ar:hover {
-    background-color: black;
-    border-radius: 10px; }
-
 /*# sourceMappingURL=main.css.map */
