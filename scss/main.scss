@@ -1,3 +1,4 @@
+
 @import 'baguetteBox';
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
@@ -13,7 +14,7 @@ $transition: all .2s ease-in-out;
     list-style: none;
 }
 
-
+// SEARCHBAR
 
 .searchbar {
     margin: 50px auto;
@@ -29,6 +30,8 @@ $transition: all .2s ease-in-out;
         font: 'Roboto', sans-serif 16px 500;
     }
 }
+
+//GALLERY
 
 .gallery {
     display: grid;

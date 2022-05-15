@@ -1,8 +1,9 @@
+
+// Img Overlay
+
 baguetteBox.run('.gallery');
-// const search = new Filter('search', 'data-caption'); 
 
-// JavaScript code
-
+// SearchBar
 
 function search() {
     const input = document.getElementById('searchbar').value.toLowerCase();
