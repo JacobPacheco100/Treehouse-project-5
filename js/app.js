@@ -8,7 +8,7 @@ function search_animal() {
     let x = document.getElementsByClassName('img');
       
     for (i = 0; i < x.length; i++) { 
-        if (!x[i].innerHTML.toLowerCase().includes(input)) {
+        if (!x[i].innerHTML.toLowerCase().includes(input)) {  // <--- I think this is what its checking for
             x[i].style.display="none";
         }
         else {
