@@ -17,10 +17,11 @@ $transition: all .2s ease-in-out;
     width: 600px;
     height: 60px;
     text-indent: 20px;
+    border: solid 2px rgb(204, 204, 204);
+    border-radius: 10px;
 
     &::placeholder {
         font: 'Roboto', sans-serif 16px 500;
-
     }
 }
 
