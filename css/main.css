@@ -162,7 +162,8 @@
 .searchbar {
   margin: 50px auto;
   display: block;
-  width: 600px;
+  width: 66%;
+  max-width: 600px;
   height: 60px;
   text-indent: 20px;
   border: solid 2px #cccccc;
@@ -172,10 +173,11 @@
 
 .gallery {
   display: grid;
-  width: 900px;
+  max-width: 900px;
   margin: 0 auto;
-  grid-template-columns: repeat(4, 1fr);
-  row-gap: 25px; }
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  gap: 25px; }
   .gallery img {
     transition: all 0.2s ease-in-out; }
     .gallery img:hover {
